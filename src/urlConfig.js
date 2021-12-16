@@ -1,7 +1,8 @@
-export const api='http://localhost:2001/api';
+const baseUrl = process.env.API || "https://nadshop-server.herokuapp.com/";
+//const baseUrl = "http://localhost:2001";
 
-export const urlpublic='http://localhost:2001/public'
+export const api = `${baseUrl}/api`;
 
-export const generatePublicUrl =(filename) => {
-    return `http://localhost:2001/public/${filename}`;
-}
+export const generatePublicUrl = (fileName) => {
+  return `${baseUrl}/public/${fileName}`;
+};
