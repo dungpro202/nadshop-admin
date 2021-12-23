@@ -41,7 +41,7 @@ console.log('i',i);i=i+1;
   return (
     <div className="App">
       <Switch>
-        <PrivateRoute path="/" exact component={Home} />
+        <PrivateRoute path="/" exact component={Products} />
         <PrivateRoute path="/account" exact component={Account} />
         <PrivateRoute path="/page" exact component={NewPage} />
         <PrivateRoute path="/category" exact component={Category} />
